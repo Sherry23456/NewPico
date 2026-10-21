@@ -58,6 +58,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+obj/
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -107,3 +108,16 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Pico / XR specific
+qiaositem_BurstDebugInformation_DoNotShip/
+
+# Keystore (sensitive)
+*.keystore
+*.jks
