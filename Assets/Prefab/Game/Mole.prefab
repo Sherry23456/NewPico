@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c32126de8e3b447bbed533e3dd96f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseHeight: 0.28
+  riseHeight: 0.14
   riseTime: 0.18
   hideTime: 0.22
   hitAnimTime: 0.25

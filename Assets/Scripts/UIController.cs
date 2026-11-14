@@ -30,6 +30,10 @@ public class UIController : MonoBehaviour
     [Header("操作提示文本")]
     public Text hintText;
 
+    int shownScore = int.MinValue;
+    int shownTimer = int.MinValue;
+    string shownCountdown;
+
     void Awake()
     {
         Instance = this;
@@ -88,16 +92,22 @@ public class UIController : MonoBehaviour
 
     public void SetScore(int s)
     {
+        if (s == shownScore) return; // 世界空间 Canvas 文本重建很贵，只在变化时写入
+        shownScore = s;
         if (scoreText != null) scoreText.text = "得分 " + s;
     }
 
     public void SetTimer(int t)
     {
+        if (t == shownTimer) return;
+        shownTimer = t;
         if (timerText != null) timerText.text = t + " 秒";
     }
 
     public void ShowCountdown(string s)
     {
+        if (s == shownCountdown) return;
+        shownCountdown = s;
         if (countdownText != null) countdownText.text = s;
     }
 

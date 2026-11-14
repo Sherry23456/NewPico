@@ -1,0 +1,8 @@
+Assets/Farm/Models/Insects —— 模型来源与授权（poly.pizza）
+- Locust.glb      Grasshopper  — Poly by Google — CC-BY 3.0 — https://poly.pizza/m/3VFH5hQvI8R
+- Vole.glb        Rat          — Poly by Google — CC-BY 3.0 — https://poly.pizza/m/6hsesZHvcPI
+- Caterpillar.glb Caterpillar  — Poly by Google — CC-BY 3.0 — https://poly.pizza/m/64T47O5VHAB
+- Frog.glb        Tree frog    — Poly by Google — CC-BY 3.0 — https://poly.pizza/m/cwyNyIba6WE
+- Ladybug.glb     Ladybird     — Exceptional_3D — CC0 1.0   — https://poly.pizza/m/3tCnJC9UYA
+- Bee.glb         Bee          — Poly by Google — CC-BY 3.0 — https://poly.pizza/m/2177F_NMT--
+CC-BY 3.0 要求署名：本文件即为署名记录，比赛材料/发布时请保留或注明出处。

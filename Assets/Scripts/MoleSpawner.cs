@@ -25,6 +25,7 @@ public class MoleSpawner : MonoBehaviour
 
     Mole[] moles;
     Coroutine loop;
+    readonly List<Mole> idle = new List<Mole>(); // 复用，避免每次生成产生 GC 分配
 
     void Awake()
     {
@@ -80,7 +81,7 @@ public class MoleSpawner : MonoBehaviour
 
     void SpawnOne()
     {
-        List<Mole> idle = new List<Mole>();
+        idle.Clear();
         foreach (Mole m in moles)
             if (m.IsIdle) idle.Add(m);
         if (idle.Count == 0) return;

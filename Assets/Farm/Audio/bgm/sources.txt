@@ -1,0 +1,33 @@
+BGM Source Log
+==============
+
+Status: FAILED - Source unavailable
+
+Intended Source:
+- Site: FreePD (freepd.com)
+- License: CC0 (Public Domain)
+- Target: Calm/acoustic piano or guitar track for farm VR ambient BGM
+
+Failure Reason:
+FreePD.com is permanently closed as of 2026-11-07.
+The site returns: "[freepd.com] is now permanently closed."
+
+No alternative sources were pursued per project constraints
+(pixabay/sonniss are blocked by firewall).
+
+---
+
+To complete this asset, you will need to either:
+1. Source a CC0/acoustic track from an accessible music library
+2. Commission original music
+3. Use Unity Asset Store audio packages
+
+Recommended free alternatives (if accessible):
+- Incompetet (incompetech.com) - CC-BY licensed
+- OpenGameArt.org - Various CC licenses
+- itch.io audio section - Many CC0 options
+
+============================================
+[2026-11-07 追加] calm.mp3 (1.06MB) 由 Qoder 从 OpenGameArt.org 下载（任务超时中断，来源详情未写完）
+状态：文件有效（ID3v2 MP3），但【曲名/作者/许可证未核实】
+比赛提交前必须到 OpenGameArt 核实该曲目许可证（CC0 可直接用；CC-BY 需署名）并补记此处。

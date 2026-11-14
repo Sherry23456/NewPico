@@ -1,0 +1,7 @@
+Farmer by Quaternius (poly.pizza; verify CC license before store)
+NPC_A: 'Adventurer' by Quaternius (poly.pizza/m/5EGWBMpuXq)
+NPC_B: 'Adventurer' by Quaternius (poly.pizza/m/ZwF0K7WBmu)
+NPC_C: 'Hooded Adventurer' by Quaternius (poly.pizza/m/y9KWOVG21R)
+Cloud_A: 'Clouds' by Jarlan Perez (poly.pizza/m/b3Kia9N2fS2)
+Cloud_B: 'Cumulus Clouds 2' by S. Paul Michael (poly.pizza/m/5ckRCisrnXh)
+Cloud_C: 'Cloud' by jeremy (poly.pizza/m/8CXbPO6p0n2)

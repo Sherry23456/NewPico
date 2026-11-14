@@ -38,9 +38,7 @@ public class Mole : MonoBehaviour
         ClearVisual();
         if (variantPrefab != null)
         {
-            GameObject go = Instantiate(variantPrefab, transform);
-            go.transform.localPosition = Vector3.zero;
-            go.transform.localRotation = Quaternion.identity;
+            GameObject go = PrefabPool.Get(variantPrefab, transform); // 走对象池，不再 Instantiate
             visual = go.transform;
         }
         onRetired = retiredCallback;
@@ -78,12 +76,13 @@ public class Mole : MonoBehaviour
         MoleVariant variant = visual != null ? visual.GetComponent<MoleVariant>() : null;
         if (variant != null)
         {
-            if (variant.isBomb && variant.explosionPrefab != null)
-            {
-                // 炸弹：原地爆炸并直接炸掉模型
-                Instantiate(variant.explosionPrefab, transform.position, Quaternion.identity);
-                ClearVisual();
-            }
+                if (variant.isBomb && variant.explosionPrefab != null)
+                {
+                    // 炸弹：原地爆炸（特效走对象池，播完自动归还）
+                    GameObject fx = PrefabPool.Get(variant.explosionPrefab, null);
+                    if (fx != null) fx.transform.position = transform.position;
+                    ClearVisual();
+                }
             else
             {
                 StartCoroutine(Squash());
@@ -143,7 +142,7 @@ public class Mole : MonoBehaviour
         if (v == null) yield break;
         Vector3 s = v.localScale;
         float t = 0f;
-        while (t < 0.12f && v != null)
+        while (t < 0.12f && v != null && v.gameObject.activeSelf) // 归还池后停止压扁动画
         {
             t += Time.deltaTime;
             float k = Mathf.Clamp01(t / 0.12f);
@@ -166,7 +165,7 @@ public class Mole : MonoBehaviour
     {
         if (visual != null)
         {
-            Destroy(visual.gameObject);
+            PrefabPool.Release(visual.gameObject); // 归还对象池而非 Destroy
             visual = null;
         }
     }
